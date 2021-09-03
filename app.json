@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "CareYaya-Entertain",
+    "slug": "CareYaya-Entertain",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "CareYaya-Entertain"
+}
