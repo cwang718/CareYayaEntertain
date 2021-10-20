@@ -3,9 +3,9 @@ import { StyleSheet, Linking } from 'react-native';
 import YoutubePlayer from "react-native-youtube-iframe";
 import { Layout, Text, Button } from '@ui-kitten/components';
 
-const Youtube = () => {
+const Youtube = ({ route }) => {
+    const { playlistId } = route.params;
     const [playing, setPlaying] = useState(false);
-
     const togglePlaying = useCallback(() => {
         setPlaying((prev) => !prev);
     }, []);
@@ -15,7 +15,7 @@ const Youtube = () => {
             <YoutubePlayer
                 height={300}
                 play={playing}
-                playList={"PL_jarfhtY-pWDUMidG3lDRtviJl6r8eUK"}
+                playList={playlistId}
                 playListStartIndex={0}
             />
             <Button
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     display: 'flex',
     flex: 1,
     justifyContent: 'center',
-    backgroundColor: 'black'
+    backgroundColor: 'black',
   },
   buttonContainer: {
     width: '60%',
