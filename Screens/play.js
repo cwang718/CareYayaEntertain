@@ -71,7 +71,7 @@ const PlayScreen = ({ navigation }) => {
               return <Button 
                       key={type}
                       style={styles.button}
-                      onPress={() => navigation.navigate('Play Matching', 
+                      onPress={() => navigation.navigate(type, 
                                       {}
                               )}>
                       {type}

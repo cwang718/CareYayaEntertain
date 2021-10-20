@@ -74,7 +74,7 @@ function shuffleCards(array) {
   }
   return array;
 }
-const PlayMatching = () => {
+const CardMatch = () => {
   const [cards, setCards] = useState(() =>
     shuffleCards(uniqueCardsArray.concat(uniqueCardsArray))
   );
@@ -163,8 +163,8 @@ const PlayMatching = () => {
     <Layout style={styles.colContainer}>
       <Layout style={styles.rowContainer}>
         {cards.slice(0,3).map((card, index) => {
-            let str = `
-                <MatchingCard
+            return (
+                    <MatchingCard
                     key={index}
                     card={card}
                     index={index}
@@ -172,12 +172,12 @@ const PlayMatching = () => {
                     isInactive={checkIsInactive(card)}
                     isFlipped={checkIsFlipped(index)}
                     onClick={handleCardClick}
-                />`;
-            return str;
+                    />
+            );
         })}
       </Layout>
     </Layout>
   );
 }
 
-export default PlayMatching;
+export default CardMatch;

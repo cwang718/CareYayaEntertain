@@ -8,7 +8,8 @@ import HomeScreen from './Screens/home';
 import ConnectScreen from './Screens/connect';
 import QuestionCardScreen from './Screens/questionCard';
 import PlayScreen from './Screens/play';
-import PlayMatchingScreen from './Screens/Play/playMatching';
+import CardMatchScreen from './Screens/Play/cardMatch';
+import CrosswordScreen from './Screens/Play/crossword';
 import ReminisceScreen from './Screens/reminisce';
 import MusicScreen from './Screens/Reminisce/music';
 import YoutubeScreen from './Screens/Reminisce/youtube';
@@ -41,8 +42,12 @@ export default function App() {
               component={PlayScreen} 
             />
             <Stack.Screen 
-              name="Play Matching" 
-              component={PlayMatchingScreen} 
+              name="Card Match" 
+              component={CardMatchScreen} 
+            />
+            <Stack.Screen 
+              name="Crossword" 
+              component={CrosswordScreen} 
             />
             <Stack.Screen
               name="Reminisce"
