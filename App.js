@@ -10,6 +10,8 @@ import QuestionCardScreen from './Screens/questionCard';
 import PlayScreen from './Screens/play';
 import CardMatchScreen from './Screens/Play/cardMatch';
 import CrosswordScreen from './Screens/Play/crossword';
+import SolitaireScreen from './Screens/Play/solitaire';
+import SudokuScreen from './Screens/Play/sudoku';
 import ReminisceScreen from './Screens/reminisce';
 import MusicScreen from './Screens/Reminisce/music';
 import YoutubeScreen from './Screens/Reminisce/youtube';
@@ -48,6 +50,14 @@ export default function App() {
             <Stack.Screen 
               name="Crossword" 
               component={CrosswordScreen} 
+            />
+            <Stack.Screen 
+              name="Solitaire" 
+              component={SolitaireScreen} 
+            />
+            <Stack.Screen 
+              name="Sudoku" 
+              component={SudokuScreen} 
             />
             <Stack.Screen
               name="Reminisce"
