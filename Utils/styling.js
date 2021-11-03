@@ -1,5 +1,28 @@
 import { StyleSheet } from 'react-native';
 
+export const homeStyles = StyleSheet.create({
+    rowContainer: {
+      flex: 1,
+      flexDirection: 'row',
+      alignItems: 'center',
+    },
+    colContainer: {
+      flex: 1,
+      flexDirection: 'column',
+    },
+    button: {
+      borderRadius: 20,
+      width: '40%',
+      height: '50%',
+      margin: '5%',
+    },
+    header: {
+      fontSize: 30,
+      textAlign: 'center',
+      paddingTop: '20%',
+    },
+  });
+
 export const optionStyles = StyleSheet.create({
     rowContainer: {
       flexDirection: 'row',
