@@ -3,4 +3,5 @@ export const gameTypes = [
     "Solitaire",
     "Sudoku",
     "Crossword",
+    "Memory Games",
 ];

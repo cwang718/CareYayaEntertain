@@ -2,8 +2,10 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet } from 'react-native';
 import * as eva from '@eva-design/eva';
-import { ApplicationProvider, Layout, Text } from '@ui-kitten/components';
+import { ApplicationProvider, IconRegistry } from '@ui-kitten/components';
 import { default as theme } from './custom-theme.json';
+import { EvaIconsPack } from '@ui-kitten/eva-icons';
+import { default as mapping } from './mapping.json';
 import HomeScreen from './Screens/home';
 import ConnectScreen from './Screens/connect';
 import QuestionCardScreen from './Screens/questionCard';
@@ -12,6 +14,7 @@ import CardMatchScreen from './Screens/Play/cardMatch';
 import CrosswordScreen from './Screens/Play/crossword';
 import SolitaireScreen from './Screens/Play/solitaire';
 import SudokuScreen from './Screens/Play/sudoku';
+import MemoryGamesScreen from './Screens/Play/memoryGames';
 import ReminisceScreen from './Screens/reminisce';
 import MusicScreen from './Screens/Reminisce/music';
 import YoutubeScreen from './Screens/Reminisce/youtube';
@@ -23,7 +26,13 @@ const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <ApplicationProvider {...eva} theme={{ ...eva.light, ...theme }}>
+  <>
+    <IconRegistry icons={EvaIconsPack} />
+    <ApplicationProvider 
+      {...eva} 
+      theme={{ ...eva.light, ...theme }}
+      customMapping={mapping}>
+        
       <NavigationContainer style={styles.container}>
           <Stack.Navigator screenOptions={{headerShown: false}}>
             <Stack.Screen
@@ -59,6 +68,10 @@ export default function App() {
               name="Sudoku" 
               component={SudokuScreen} 
             />
+            <Stack.Screen 
+              name="Memory Games" 
+              component={MemoryGamesScreen} 
+            />
             <Stack.Screen
               name="Reminisce"
               component={ReminisceScreen}
@@ -79,6 +92,7 @@ export default function App() {
       </NavigationContainer>
       <StatusBar style="auto" />
     </ApplicationProvider>
+  </>
   );
 }
 

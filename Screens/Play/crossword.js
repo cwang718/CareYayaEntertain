@@ -1,6 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
-import { StyleSheet } from 'react-native';
-import { ApplicationProvider, Layout, Text } from '@ui-kitten/components';
+import React from "react";
 import { WebView } from 'react-native-webview';
 
 const Crossword = () => {
