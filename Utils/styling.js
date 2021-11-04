@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native';
 
+// For Home screen
 export const homeStyles = StyleSheet.create({
     rowContainer: {
       flex: 1,
@@ -23,7 +24,13 @@ export const homeStyles = StyleSheet.create({
     },
   });
 
+// For Connect, Laugh, Play, Reminise screens
 export const optionStyles = StyleSheet.create({
+    outerContainer: {
+      height: '200%',
+      justifyContent: 'center',
+    },
+
     rowContainer: {
       flexDirection: 'row',
     },
@@ -32,9 +39,16 @@ export const optionStyles = StyleSheet.create({
       flexDirection: 'column',
       alignItems: 'center',
     },
-    outerContainer: {
-      height: '200%',
+
+    icon: {
+        height: '100%', 
+        tintColor: '#FF4949',
     },
+    iconContainer: {
+        height: '10%', 
+        paddingTop: '10%',
+    },
+
     button: {
       borderRadius: 20,
       width: '40%',
@@ -47,13 +61,13 @@ export const optionStyles = StyleSheet.create({
       alignContent: 'center',
       alignItems: 'center',
     },
-    header: {
-      fontSize: 20,
-      textAlign: 'center',
-      paddingTop: '10%',
-    },
+
     sectionHeader: {
-      fontSize: 20,
-      padding: '10%',
+      fontSize: 30,
+      padding: '5%',
+      paddingBottom: '10%',
+      textAlign: 'center',
+      fontWeight: '800',
+      color: '#234971',
     },
-  });
+});

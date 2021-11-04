@@ -1,16 +1,16 @@
 import React from 'react';
-import { StyleSheet, ScrollView } from 'react-native';
-import { Layout, Text, Button } from '@ui-kitten/components';
+import { ScrollView } from 'react-native';
+import { Layout, Text, Button, Icon } from '@ui-kitten/components';
 import { gameTypes } from '../Utils/games';
 import { CircleButton } from '../Components/circleButton';
-import { getRandomGameType, getRandomQType } from '../Utils/helperFxns';
+import { getRandomGameType } from '../Utils/helperFxns';
 import { optionStyles } from '../Utils/styling';
 
 const PlayScreen = ({ navigation }) => {
     return (
         <ScrollView contentContainerStyle={optionStyles.outerContainer}>
-          <Layout>
-              <Text style={optionStyles.header}>CareYaya Entertain</Text>
+          <Layout style={optionStyles.iconContainer}>
+            <Icon name='layers-outline' style={optionStyles.icon} />
           </Layout>
 
           <Layout>
