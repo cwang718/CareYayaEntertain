@@ -26,8 +26,12 @@ export const homeStyles = StyleSheet.create({
 
 // For Connect, Laugh, Play, Reminise screens
 export const optionStyles = StyleSheet.create({
-    outerContainer: {
+    outerLargeContainer: {
       height: '200%',
+      justifyContent: 'center',
+    },
+    outerAvgContainer: {
+      height: '165%',
       justifyContent: 'center',
     },
 
@@ -54,7 +58,6 @@ export const optionStyles = StyleSheet.create({
       width: '40%',
       height: '15%',
       margin: '5%',
-      
     },
     buttonText: {
       textAlign: 'center',
@@ -70,4 +73,24 @@ export const optionStyles = StyleSheet.create({
       fontWeight: '800',
       color: '#234971',
     },
+});
+
+export const circleButtonStyles = StyleSheet.create({
+    bottomContainer: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: '100%',
+        height: '30%',
+        padding: '10%',
+        paddingBottom: '30%',
+    },
+    roundButton: {
+        marginTop: 20,
+        width: 150,
+        height: 150,
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 10,
+        borderRadius: 100,
+      },
 });

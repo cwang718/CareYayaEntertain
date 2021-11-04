@@ -8,7 +8,7 @@ import { optionStyles } from '../Utils/styling';
 
 const PlayScreen = ({ navigation }) => {
     return (
-        <ScrollView contentContainerStyle={optionStyles.outerContainer}>
+        <ScrollView contentContainerStyle={optionStyles.outerLargeContainer}>
           <Layout style={optionStyles.iconContainer}>
             <Icon name='layers-outline' style={optionStyles.icon} />
           </Layout>
@@ -28,7 +28,11 @@ const PlayScreen = ({ navigation }) => {
                     </Button>
             })}
           </Layout>
-          <CircleButton label='Random' getType={getRandomGameType} navigation={navigation} />
+          <CircleButton 
+            label='Random' 
+            getType={getRandomGameType}
+            navToQCard={false}
+            navigation={navigation} />
         </ScrollView>
     )
 }

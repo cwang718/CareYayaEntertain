@@ -1,39 +1,39 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
 import { Button, Layout } from '@ui-kitten/components';
-
-const styles = StyleSheet.create({
-    bottomContainer: {
-        justifyContent: 'center',
-        alignItems: 'center',
-        width: '100%',
-        height: '30%',
-        padding: '10%',
-        paddingBottom: '30%',
-    },
-    roundButton: {
-        marginTop: 20,
-        width: 150,
-        height: 150,
-        justifyContent: 'center',
-        alignItems: 'center',
-        padding: 10,
-        borderRadius: 100,
-      },
-});
+import { circleButtonStyles } from '../Utils/styling';
 
 export const CircleButton = (props) => {
-    const { label, getType, navigation } = props;
+    const { label, getType, navToQCard, navigation } = props;
 
-    return (
-        <Layout style={styles.bottomContainer}>
-              <Button 
-                status='danger'
-                style={styles.roundButton}
-                size='giant'
-                onPress={() => navigation.navigate(getType())}>
-                {label}
-              </Button>
-        </Layout>
-    );
+    // In Connect screen
+    if(navToQCard) {
+        return (
+            <Layout style={circleButtonStyles.bottomContainer}>
+                <Button 
+                    status='danger'
+                    style={circleButtonStyles.roundButton}
+                    size='giant'
+                    onPress={() => navigation.navigate('Question Card',
+                                        {qType: getType(), 
+                                        random: true})}>
+                    {label}
+                </Button>
+            </Layout>
+        );
+
+    // In another screen
+    } else {
+        return (
+            <Layout style={circleButtonStyles.bottomContainer}>
+                <Button 
+                    status='danger'
+                    style={circleButtonStyles.roundButton}
+                    size='giant'
+                    onPress={() => navigation.navigate(getType())}>
+                    {label}
+                </Button>
+            </Layout>
+        );
+    }
+    
 }
