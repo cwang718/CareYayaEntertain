@@ -31,6 +31,7 @@ const ConnectScreen = ({ navigation }) => {
                     </Button>
             })}
           </Layout>
+          
           <CircleButton 
             label='Random' 
             getType={getRandomQType}

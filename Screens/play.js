@@ -28,6 +28,7 @@ const PlayScreen = ({ navigation }) => {
                     </Button>
             })}
           </Layout>
+          
           <CircleButton 
             label='Random' 
             getType={getRandomGameType}

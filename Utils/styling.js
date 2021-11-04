@@ -34,6 +34,10 @@ export const optionStyles = StyleSheet.create({
       height: '165%',
       justifyContent: 'center',
     },
+    outerSmallContainer: {
+      height: '100%',
+      justifyContent: 'center',
+    },
 
     rowContainer: {
       flexDirection: 'row',
@@ -52,6 +56,10 @@ export const optionStyles = StyleSheet.create({
         height: '10%', 
         paddingTop: '10%',
     },
+    iconBiggerContainer: {
+      height: '20%', 
+      paddingTop: '10%',
+  },
 
     button: {
       borderRadius: 20,
