@@ -36,7 +36,6 @@ export const optionStyles = StyleSheet.create({
     },
     outerSmallContainer: {
       height: '100%',
-      justifyContent: 'center',
     },
 
     rowContainer: {
@@ -80,6 +79,11 @@ export const optionStyles = StyleSheet.create({
       textAlign: 'center',
       fontWeight: '800',
       color: '#234971',
+    },
+    subtitleHeader: {
+      fontSize: 30,
+      padding: '10%',
+      textAlign: 'center',
     },
 });
 
