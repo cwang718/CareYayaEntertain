@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, ScrollView } from 'react-native';
 import { Layout, Text, Button, Icon } from '@ui-kitten/components';
+import RecordButton from '../../Components/recordButton';
 import { optionStyles } from '../../Utils/styling';
 
 const styles = StyleSheet.create({
@@ -52,7 +53,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const Photos = ({ navigation }) => {
+const Photos = () => {
     return (
         <ScrollView contentContainerStyle={optionStyles.outerSmallContainer}>
           <Layout style={optionStyles.iconBiggerContainer}>
@@ -62,12 +63,8 @@ const Photos = ({ navigation }) => {
           <Layout>
             <Text style={optionStyles.subtitleHeader}>Ask if they can walk through a photo album with you!</Text>
           </Layout>
-          <Layout style={styles.bottomContainer}>
-              <Button 
-                style={styles.uniqueButton}>
-                Record
-              </Button>
-          </Layout>
+
+          <RecordButton />
         </ScrollView>
     )
 }

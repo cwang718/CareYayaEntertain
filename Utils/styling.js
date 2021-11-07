@@ -104,5 +104,57 @@ export const circleButtonStyles = StyleSheet.create({
         alignItems: 'center',
         padding: 10,
         borderRadius: 100,
-      },
+    },
+});
+
+export const recordStyles = StyleSheet.create({
+  recordStartButton: {
+    padding: '20%',
+    width: '70%',
+    alignSelf: 'center',
+  },
+  recordStopButton: {
+    padding: '20%',
+    width: '70%',
+    alignSelf: 'center',
+    backgroundColor: '#FF4949',
+    borderColor: '#FF4949',
+  },
+
+  container: {
+    height: '100%',
+  },
+  buttonContainer: {
+    padding: '5%',
+  },
+});
+
+export const cardStyles = StyleSheet.create({
+  cardContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    marginTop: 'auto',
+    marginBottom: 'auto',
+    width: '90%',
+    height: '55%',
+    borderWidth: 3,
+    backgroundColor: 'white',
+  },
+  outerContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingTop: '15%',
+  },
+  button: {
+    borderRadius: 20,
+    width: '60%',
+    height: '15%',
+    margin: '5%',
+  },
+  text: {
+    fontSize: 25,
+    textAlign: 'center',
+  },
 });

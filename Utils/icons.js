@@ -16,3 +16,15 @@ export const CardIcon = (props) => (
 export const CameraIcon = (props) => (
     <Icon name='camera' {...props} />
 );
+
+export const RecordIcon = (props) => (
+    <Icon name='recording-outline' {...props} />
+);
+
+export const StopIcon = (props) => (
+    <Icon name='stop-circle' {...props} />
+);
+
+export const PlayIcon = (props) => (
+    <Icon name='play-circle' {...props} />
+);
