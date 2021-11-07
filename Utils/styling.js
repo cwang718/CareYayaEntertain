@@ -158,3 +158,18 @@ export const cardStyles = StyleSheet.create({
     textAlign: 'center',
   },
 });
+
+export const gridStyles = StyleSheet.create({
+  gridView: {
+    paddingTop: '5%',
+    flex: 1,
+    backgroundColor: '#E0C0AE',
+  },
+  itemContainer: {
+    justifyContent: 'flex-end',
+    borderRadius: 5,
+    padding: 10,
+    height: 150,
+    borderColor: 'transparent',
+  },
+});
