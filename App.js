@@ -19,6 +19,8 @@ import ReminisceScreen from './Screens/reminisce';
 import MusicScreen from './Screens/Reminisce/music';
 import YoutubeScreen from './Screens/Reminisce/youtube';
 import PhotoScreen from './Screens/Reminisce/photos';
+import LaughScreen from './Screens/laugh';
+import JokesScreen from './Screens/Laugh/jokes';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
@@ -87,6 +89,14 @@ export default function App() {
             <Stack.Screen 
               name="Photos"
               component={PhotoScreen}
+            />
+            <Stack.Screen 
+              name="Laugh"
+              component={LaughScreen}
+            />
+            <Stack.Screen 
+              name="Jokes"
+              component={JokesScreen}
             />
           </Stack.Navigator>
       </NavigationContainer>

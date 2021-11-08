@@ -22,6 +22,7 @@ const HomeScreen = ({ navigation }) => {
 
                 <Button 
                   style={homeStyles.button}
+                  onPress={() => navigation.navigate('Laugh')}
                   accessoryLeft={SunIcon}
                   size='giant'>
                   Laugh
