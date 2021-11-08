@@ -8,7 +8,7 @@ import { EvaIconsPack } from '@ui-kitten/eva-icons';
 import { default as mapping } from './mapping.json';
 import HomeScreen from './Screens/home';
 import ConnectScreen from './Screens/connect';
-import QuestionCardScreen from './Screens/questionCard';
+import QuestionCardScreen from './Components/questionCard';
 import PlayScreen from './Screens/play';
 import CardMatchScreen from './Screens/Play/cardMatch';
 import CrosswordScreen from './Screens/Play/crossword';

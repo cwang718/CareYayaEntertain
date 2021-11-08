@@ -138,7 +138,7 @@ export const cardStyles = StyleSheet.create({
     marginTop: 'auto',
     marginBottom: 'auto',
     width: '90%',
-    height: '55%',
+    height: '60%',
     borderWidth: 3,
     backgroundColor: 'white',
   },
@@ -154,7 +154,7 @@ export const cardStyles = StyleSheet.create({
     margin: '5%',
   },
   text: {
-    fontSize: 25,
+    fontSize: 20,
     textAlign: 'center',
   },
 });
