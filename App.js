@@ -21,6 +21,7 @@ import YoutubeScreen from './Screens/Reminisce/youtube';
 import PhotoScreen from './Screens/Reminisce/photos';
 import LaughScreen from './Screens/laugh';
 import JokesScreen from './Screens/Laugh/jokes';
+import FeelGoodMoviesScreen from './Screens/Laugh/feelGoodMovies';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
@@ -97,6 +98,10 @@ export default function App() {
             <Stack.Screen 
               name="Jokes"
               component={JokesScreen}
+            />
+            <Stack.Screen 
+              name="Feel-Good Movies"
+              component={FeelGoodMoviesScreen}
             />
           </Stack.Navigator>
       </NavigationContainer>

@@ -1,6 +1,6 @@
 export const laughTypes = [
     "Jokes",
-    // "Solitaire",
+    "Feel-Good Movies",
     // "Sudoku",
     // "Crossword",
     // "Memory Games",
