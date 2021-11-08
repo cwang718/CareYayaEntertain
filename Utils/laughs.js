@@ -1,7 +1,7 @@
 export const laughTypes = [
     "Jokes",
     "Feel-Good Movies",
-    // "Sudoku",
+    "Dance",
     // "Crossword",
     // "Memory Games",
 ];

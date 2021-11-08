@@ -36,6 +36,7 @@ export const optionStyles = StyleSheet.create({
     },
     outerSmallContainer: {
       height: '100%',
+      backgroundColor: '#E0C0AE',
     },
 
     rowContainer: {
@@ -51,6 +52,10 @@ export const optionStyles = StyleSheet.create({
         height: '100%', 
         tintColor: '#FF4949',
     },
+    biggerIcon: {
+      height: '150%', 
+      tintColor: '#FF4949',
+  },
     iconContainer: {
         height: '10%', 
         paddingTop: '10%',
@@ -58,7 +63,7 @@ export const optionStyles = StyleSheet.create({
     iconBiggerContainer: {
       height: '20%', 
       paddingTop: '10%',
-  },
+    },
 
     button: {
       borderRadius: 20,

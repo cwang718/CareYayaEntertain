@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyleSheet, ScrollView } from 'react-native';
-import { Layout, Text, Button, Icon } from '@ui-kitten/components';
+import { ScrollView } from 'react-native';
+import { Layout, Text, Icon } from '@ui-kitten/components';
 import RecordButton from '../../Components/recordButton';
 import { optionStyles } from '../../Utils/styling';
 
