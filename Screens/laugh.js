@@ -3,7 +3,7 @@ import { ScrollView } from 'react-native';
 import { Layout, Text, Button, Icon } from '@ui-kitten/components';
 import { laughTypes } from '../Utils/laughs';
 import { CircleButton } from '../Components/circleButton';
-import { getRandomGameType } from '../Utils/helperFxns';
+import { getRandomLaughType } from '../Utils/helperFxns';
 import { optionStyles } from '../Utils/styling';
 
 const LaughScreen = ({ navigation }) => {
@@ -31,7 +31,7 @@ const LaughScreen = ({ navigation }) => {
           
           <CircleButton 
             label='Random' 
-            getType={getRandomGameType}
+            getType={getRandomLaughType}
             navToQCard={false}
             navigation={navigation} />
         </ScrollView>
