@@ -23,6 +23,8 @@ import LaughScreen from './Screens/laugh';
 import JokesScreen from './Screens/Laugh/jokes';
 import FeelGoodMoviesScreen from './Screens/Laugh/feelGoodMovies';
 import DanceScreen from './Screens/Laugh/dance';
+import TwistersScreen from './Screens/Laugh/twisters';
+import KaraokeScreen from './Screens/Laugh/karaoke';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
@@ -107,6 +109,14 @@ export default function App() {
             <Stack.Screen 
               name="Dance"
               component={DanceScreen}
+            />
+            <Stack.Screen 
+              name="Tongue Twisters"
+              component={TwistersScreen}
+            />
+            <Stack.Screen 
+              name="Karaoke"
+              component={KaraokeScreen}
             />
           </Stack.Navigator>
       </NavigationContainer>
