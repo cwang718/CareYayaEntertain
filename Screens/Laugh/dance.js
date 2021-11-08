@@ -11,11 +11,12 @@ const Dance = () => {
           </Layout>
 
           <Layout>
-            <Text style={optionStyles.subtitleHeader}>Put some music on and dance with them!</Text>
+            <Text style={optionStyles.sectionHeader}>Put some music on and dance with them!</Text>
+            <Text style={optionStyles.subtitleHeader}>(e.g. square-dancing, ballroom, salsa, freestyle)</Text>
           </Layout>
 
           <Layout style={optionStyles.iconBiggerContainer}>
-            <Icon name='music' style={optionStyles.biggerIcon} />
+            <Icon name='music' style={optionStyles.icon} />
           </Layout>
         </ScrollView>
     )
