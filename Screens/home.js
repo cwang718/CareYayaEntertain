@@ -1,13 +1,13 @@
 import React from 'react';
-import { Layout, Text, Button } from '@ui-kitten/components';
+import { Layout, Button, Avatar } from '@ui-kitten/components';
 import { PeopleIcon, SunIcon, CardIcon, CameraIcon } from '../Utils/icons';
 import { homeStyles } from '../Utils/styling';
 
 const HomeScreen = ({ navigation }) => {
     return (
       <>
-        <Layout>
-            <Text style={homeStyles.header}>CareYaya Entertain</Text>
+        <Layout style={homeStyles.logoContainer}>
+            <Avatar style={homeStyles.logo} source={require('../Images/logo.png')} />
         </Layout>
 
         <Layout style={homeStyles.colContainer}>

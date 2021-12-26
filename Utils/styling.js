@@ -2,6 +2,15 @@ import { StyleSheet } from 'react-native';
 
 // For Home screen
 export const homeStyles = StyleSheet.create({
+    logo: {
+      width: '100%',
+      alignSelf: 'center',
+      resizeMode: 'contain',
+    },
+    logoContainer: {
+      justifyContent: 'center',
+      paddingTop: '20%',
+    },
     rowContainer: {
       flex: 1,
       flexDirection: 'row',
