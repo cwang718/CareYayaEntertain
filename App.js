@@ -6,27 +6,38 @@ import { ApplicationProvider, IconRegistry } from '@ui-kitten/components';
 import { default as theme } from './custom-theme.json';
 import { EvaIconsPack } from '@ui-kitten/eva-icons';
 import { default as mapping } from './mapping.json';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+// Main Screen
 import HomeScreen from './Screens/home';
+
+// Connect Screen imports
 import ConnectScreen from './Screens/connect';
 import QuestionCardScreen from './Components/questionCard';
+
+// Play Screen imports
 import PlayScreen from './Screens/play';
 import CardMatchScreen from './Screens/Play/cardMatch';
 import CrosswordScreen from './Screens/Play/crossword';
 import SolitaireScreen from './Screens/Play/solitaire';
 import SudokuScreen from './Screens/Play/sudoku';
 import MemoryGamesScreen from './Screens/Play/memoryGames';
+
+// Reminisce Screen imports
 import ReminisceScreen from './Screens/reminisce';
 import MusicScreen from './Screens/Reminisce/music';
 import YoutubeScreen from './Screens/Reminisce/youtube';
 import PhotoScreen from './Screens/Reminisce/photos';
+
+// Laugh Screen imports
 import LaughScreen from './Screens/laugh';
 import JokesScreen from './Screens/Laugh/jokes';
 import FeelGoodMoviesScreen from './Screens/Laugh/feelGoodMovies';
 import DanceScreen from './Screens/Laugh/dance';
 import TwistersScreen from './Screens/Laugh/twisters';
 import KaraokeScreen from './Screens/Laugh/karaoke';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
 
 const Stack = createNativeStackNavigator();
 

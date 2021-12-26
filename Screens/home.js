@@ -3,6 +3,7 @@ import { Layout, Button, Avatar } from '@ui-kitten/components';
 import { PeopleIcon, SunIcon, CardIcon, CameraIcon } from '../Utils/icons';
 import { homeStyles } from '../Utils/styling';
 
+// Main screen with 4 types of things to do with senior—Connect, Laugh, Play, Reminisce
 const HomeScreen = ({ navigation }) => {
     return (
       <>

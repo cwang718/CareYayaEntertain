@@ -6,6 +6,7 @@ import { CircleButton } from '../Components/circleButton';
 import { getRandomGameType } from '../Utils/helperFxns';
 import { optionStyles } from '../Utils/styling';
 
+// Screen listing games that can be played
 const PlayScreen = ({ navigation }) => {
     return (
         <ScrollView contentContainerStyle={optionStyles.outerLargeContainer}>

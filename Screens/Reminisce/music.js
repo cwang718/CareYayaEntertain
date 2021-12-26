@@ -1,10 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, Linking } from 'react-native';
+import { Text } from 'react-native';
 import { Button } from '@ui-kitten/components';
 import { FlatGrid } from 'react-native-super-grid';
 import { playlists } from './playlists';
 import { gridStyles } from '../../Utils/styling';
 
+// Screen listing different eras of music to listen to
 const Music = ({ navigation }) => {
   return (
     <FlatGrid

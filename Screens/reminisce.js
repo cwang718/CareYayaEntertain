@@ -6,6 +6,7 @@ import { remTypes } from '../Utils/reminisces';
 import { getRandomRemType } from '../Utils/helperFxns';
 import { optionStyles } from '../Utils/styling';
 
+// Screen listing things senior can reminisce on
 const ReminisceScreen = ({ navigation }) => {
     return (
         <ScrollView contentContainerStyle={optionStyles.outerSmallContainer}>

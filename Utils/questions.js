@@ -4,6 +4,7 @@ export const questionTypes = [
     "Life Experience",
     "Emotional Matters",
 ];
+// List of topics and questions within topics (in Connect Screen question cards)
 
 export const questions = {
     "Life Today": [

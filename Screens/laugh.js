@@ -6,6 +6,7 @@ import { CircleButton } from '../Components/circleButton';
 import { getRandomLaughType } from '../Utils/helperFxns';
 import { optionStyles } from '../Utils/styling';
 
+// Screen listing feel-good things to do together
 const LaughScreen = ({ navigation }) => {
     return (
         <ScrollView contentContainerStyle={optionStyles.outerLargeContainer}>

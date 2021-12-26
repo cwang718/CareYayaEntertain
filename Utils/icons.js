@@ -1,3 +1,5 @@
+// List of icons used throughout app
+
 import React from 'react';
 import { Icon } from '@ui-kitten/components';
 

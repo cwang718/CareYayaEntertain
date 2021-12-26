@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { StyleSheet } from 'react-native';
+import React, { useState } from 'react';
 import { Layout, Button, Text } from '@ui-kitten/components';
 import { Audio } from 'expo-av';
 import { RecordIcon, StopIcon, PlayIcon } from '../Utils/icons';
 import { recordStyles } from '../Utils/styling';
 
+// Creates a button that records audio
 const RecordButton = () => {
   const [recording, setRecording] = useState();
   const [sound, setSound] = useState();

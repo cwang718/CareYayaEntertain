@@ -3,6 +3,7 @@ import { ScrollView } from 'react-native';
 import { Layout, Text, Button, Icon } from '@ui-kitten/components';
 import { optionStyles } from '../../Utils/styling';
 
+// Screen instructing caretaker to karaoke with senior
 const Karaoke = () => {
     return (
         <ScrollView contentContainerStyle={optionStyles.outerSmallContainer}>

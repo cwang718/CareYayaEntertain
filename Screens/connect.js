@@ -6,6 +6,7 @@ import { getRandomQType } from '../Utils/helperFxns';
 import { CircleButton } from '../Components/circleButton';
 import { optionStyles } from '../Utils/styling';
 
+// Screen listing things to ask senior about to connect more
 const ConnectScreen = ({ navigation }) => {
     return (
         <ScrollView contentContainerStyle={optionStyles.outerAvgContainer}>

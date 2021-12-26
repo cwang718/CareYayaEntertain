@@ -6,8 +6,10 @@ import { getRandomInt, getRandomQType } from '../Utils/helperFxns';
 import RecordButton from '../Components/recordButton';
 import { cardStyles } from '../Utils/styling';
 
+// Creates card with question for caretaker to ask
 const QuestionCardScreen = ({ route }) => {
     let { qType, random } = route.params;
+    // States allow card to have randomized question and/or topic depending on button pressed
     let [qIdx, setQIdx] = useState(getRandomInt(questions[qType].length));
     let [topic, setTopic] = useState(qType);
     

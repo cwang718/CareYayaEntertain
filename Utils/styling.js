@@ -1,3 +1,5 @@
+// Styling for all elements personalized in app
+
 import { StyleSheet } from 'react-native';
 
 // For Home screen
@@ -69,7 +71,6 @@ export const optionStyles = StyleSheet.create({
       height: '20%', 
       paddingTop: '10%',
     },
-
     button: {
       borderRadius: 20,
       width: '40%',
@@ -130,7 +131,6 @@ export const recordStyles = StyleSheet.create({
     backgroundColor: '#FF4949',
     borderColor: '#FF4949',
   },
-
   container: {
     height: '100%',
   },

@@ -3,6 +3,7 @@ import { StyleSheet, Linking } from 'react-native';
 import YoutubePlayer from "react-native-youtube-iframe";
 import { Layout, Text, Button } from '@ui-kitten/components';
 
+// Screen allowing user to play a playlist
 const Youtube = ({ route }) => {
     const { playlistId } = route.params;
     const [playing, setPlaying] = useState(false);

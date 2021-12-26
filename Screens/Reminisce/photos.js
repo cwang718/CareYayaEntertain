@@ -4,6 +4,7 @@ import { Layout, Text, Icon } from '@ui-kitten/components';
 import RecordButton from '../../Components/recordButton';
 import { optionStyles } from '../../Utils/styling';
 
+// Screen instructing caretaker to walk through photo album with senior
 const Photos = () => {
     return (
         <ScrollView contentContainerStyle={optionStyles.outerSmallContainer}>

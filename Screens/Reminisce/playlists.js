@@ -1,3 +1,4 @@
+// Array of playlists of specific era of music
 export const playlists = [
     { name: '1920s', code: '#1abc9c', 
       link: 'https://www.youtube.com/watch?v=sYhFFgqmH4c&list=PL_jarfhtY-pWDUMidG3lDRtviJl6r8eUK',
